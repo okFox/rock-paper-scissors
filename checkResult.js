@@ -28,19 +28,19 @@ const checkResult = (player, computer) => {
     if (player === computer) {
         
         return tieMsg;
-    } else if (player.value === 'rock' && computer === 'paper') {
+    } else if (player === 'rock' && computer === 'paper') {
         return loseMsg;
-    } else if (player.value === 'rock' && computer === 'scissors') {
+    } else if ((player === 'rock') && (computer === 'scissors')) {
         return winMsg;
-    } else if (player.value === 'paper' && computer === 'rock') {
+    } else if (player === 'paper' && computer === 'rock') {
         return winMsg;
-    } else if (player.value === 'paper' && computer === 'scissors') {
+    } else if (player === 'paper' && computer === 'scissors') {
         return loseMsg;
-    } else if (player.value === 'scissors' && computer === 'paper') {
+    } else if (player === 'scissors' && computer === 'paper') {
         return winMsg;
-    } else if (player.value === 'scissors' && computer === 'rock') {
+    } else if (player === 'scissors' && computer === 'rock')
         return loseMsg;
-    } else; 
+     
   
 };    
      
