@@ -1,1 +1,1 @@
-import '../getThrowFromNumber';
+import './checkResult.test.js';

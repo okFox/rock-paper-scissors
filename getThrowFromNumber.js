@@ -18,7 +18,7 @@ const getThrowFromNumber = (throwResult) => {
 
 };
 
-console.log(throwResult);
+export default getThrowFromNumber;
 
 
 
