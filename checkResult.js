@@ -14,18 +14,35 @@ You can assume valid input, meaning the passed input will always be a valid thro
 //
 
 
+//import getRandomThrow from './getRandomThrow.js';
 
-//const winMsg = 'You Win!';
-//const loseMsg = 'You Lose';
-//const tieMSG = 'It is a tie';
+const winMsg = 'You Win!';
+const loseMsg = 'You Lose';
+const tieMsg = 'It is a tie';
 
-const checkResult = function(player, computer) {
-    
+//let computer = getRandomThrow();
+
+const checkResult = (player, computer) => {
+
+
     if (player === computer) {
         
-        return 'tie';
-    }
-    
-};     
+        return tieMsg;
+    } else if (player.value === 'rock' && computer === 'paper') {
+        return loseMsg;
+    } else if (player.value === 'rock' && computer === 'scissors') {
+        return winMsg;
+    } else if (player.value === 'paper' && computer === 'rock') {
+        return winMsg;
+    } else if (player.value === 'paper' && computer === 'scissors') {
+        return loseMsg;
+    } else if (player.value === 'scissors' && computer === 'paper') {
+        return winMsg;
+    } else if (player.value === 'scissors' && computer === 'rock') {
+        return loseMsg;
+    } else; 
+  
+};    
      
+
 export default checkResult;

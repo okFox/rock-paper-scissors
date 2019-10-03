@@ -1,5 +1,5 @@
         
-//let randomNum = Math.floor(Math.random() * 3);
+
 
 const getRandomThrow = (compThrow) => {
     if (compThrow === 0) {
