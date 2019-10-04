@@ -1,18 +1,32 @@
 body {
     width: 100%;
 }
+header{
+ 
+}
+
+#logo {
+    background: #1C2321;
+    color: white;
+ padding :50px;
+}
+
 h1 {
     font-size: 50px;
     font-family: 'Bangers', cursive;
 }
+
+h3 {
+    font-family: 'Lexend Mega', sans-serif;  
+}
+
+
 section {
-    font-family: 'Lexend Mega', sans-serif;
+    font-family: 'Lexend Mega', sans-serif; 
+}
+
+
  
-    
-}
-span#opp-throw {
-    font-style: red bold 125%;
-}
 
 .throwChoices {
     background: #A9B4C2;
@@ -36,4 +50,27 @@ display: none;
 }
 input:checked + .throw-image {
     border: 5px solid steelblue;
+}
+
+#game-result {
+    Color: red; 
+    font-size: 150%; 
+}
+
+
+#opp-throw {
+
+    color: red; 
+    font-size: 150%; 
+}
+
+#games-wld {
+
+    color: red; 
+    font-size: 150%; 
+}
+
+button {
+    font-size: 200%;
+    background: red;
 }

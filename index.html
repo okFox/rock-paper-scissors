@@ -10,7 +10,7 @@
     <title>RPS - The Video Game!</title>
 </head>
 <header class='instructions'>
-    <h1>RPS - The Video Game!</h1>
+    <div id='logo'><h1>RPS - The Video Game!</h1></div>
    <div id='rules'>
        <h3>Rules:</h3>
        <ul>
@@ -19,39 +19,42 @@
            <li> Scissors beats Paper</li>
        </ul>
     </div> 
+    <h3>If you win 10 times the computer will give up!</h3>
 </header>
 
 
 <div class='throwChoices'>
-    <div><label> Rock
+    <div><label>
             <input name="choice" value='rock' type="radio" checked>
-            <img class="throw-image" src="./assets/rock.jpeg">
+            <img class="throw-image" alt='rock' src="./assets/rock.jpeg">
     </label></div>
-    <div><label> Paper
+    <div><label>
             <input name="choice" value='paper' type="radio" />
-            <img class="throw-image" src="./assets/paper.jpeg">
+            <img class="throw-image" alt="paper" src="./assets/paper.jpeg">
     </label></div>
-    <div><label> Scissors
+    <div><label>
             <input name="choice" value='scissors' type="radio"/>
-            <img class="throw-image" src="./assets/scissors.jpeg">
+            <img class="throw-image" alt="scissors"src="./assets/scissors.jpeg">
     </label></div>
 </div>
+
 <section class='in-game'>
     <button id='shoot-button'>Shoot!</button>
 </section>
+
 <section id='results'>
+    <h3>Results: </h3>
     <div>
         Your opponent played: <span id='opp-throw'></span>
     </div>
     <div>
-        Result: <span id='game-result'></span>
+        Game Result: <span id='game-result'></span>
     </div>
-    <div>Total games played: <span id='games-played'></span></div>
+
     <div>Won - Lost - Draw: <span id='games-wld'></span></div>
+    
 </section>
-<section id='play-again'>
-    <button>play again</button>
-</section>
+
 
 
 <body>
