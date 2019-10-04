@@ -31,8 +31,8 @@ const playGame = () => {
     const selectedRadioButton = document.querySelector('input:checked');
     const userSelectedThrow = selectedRadioButton.value;  
     
-    
-    let compCurrentThrow = getRandomThrow(randomNum);
+    //need to generate new random number each time playGame called
+    let compCurrentThrow = getRandomThrow(randomNum());
     
     let gameResult = checkResult(userSelectedThrow, compCurrentThrow);
     gameResultSpan.textContent = gameResult;
