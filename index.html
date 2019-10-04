@@ -22,28 +22,31 @@
 
 
 <section class='throwChoices'>
-    <label id='rock'> Rock
-            <input name="choice" value="rock" type="radio" checked />
-            <img class="rock-image" src="./assets/rock.jpeg">
+    <label> Rock
+            <input name="choice" value='rock' type="radio" checked>
+            <img class="throw-image" src="./assets/rock.jpeg">
     </label>
-    <label id='paper'>Paper
-            <input name="choice" value="paper" type="radio" checked />
-            <img class="paper-image" src="./assets/paper.jpeg">
+    <label> Paper
+            <input name="choice" value='paper' type="radio" />
+            <img class="throw-image" src="./assets/paper.jpeg">
     </label>
-    <label id='scissors'>Scissors
-            <input name="choice" value="scissors" type="radio" checked />
-            <img class="scissors-image" src="./assets/scissors.jpeg">
+    <label> Scissors
+            <input name="choice" value='scissors' type="radio"/>
+            <img class="throw-image" src="./assets/scissors.jpeg">
     </label>
+</section>
+<section class='in-game'>
+    <button id='shoot-button'>Shoot!</button>
 </section>
 <section id='results'>
     <div>
         Your opponent played: <span id='opp-throw'></span>
     </div>
     <div>
-        You: <span id='game-result'></span>
+        Result: <span id='game-result'></span>
     </div>
-    <div>Total games played: <span id=games-played></span></div>
-    <div>Total games won: <span id='games-won'></span></div>
+    <div>Total games played: <span id='games-played'></span></div>
+    <div>Won - Lost - Draw: <span id='games-wld'></span></div>
 </section>
 <section id='play-again'>
     <button>play again</button>
