@@ -1,6 +1,4 @@
-// import functions
-import './checkResult.js';
-import './getRandomThrow.js';
+
 import getRandomThrow from './getRandomThrow.js';
 import checkResult from './checkResult.js';
 

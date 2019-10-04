@@ -1,14 +1,14 @@
 body {
     width: 100%;
+    background: #7D98A1;
 }
-header{
- 
-}
+
 
 #logo {
     background: #1C2321;
-    color: white;
- padding :50px;
+    color: #EEF1EF;
+    padding :25px;
+    margin: 0;
 }
 
 h1 {
@@ -53,24 +53,25 @@ input:checked + .throw-image {
 }
 
 #game-result {
-    Color: red; 
+     
     font-size: 150%; 
 }
 
 
 #opp-throw {
 
-    color: red; 
+   
     font-size: 150%; 
 }
 
 #games-wld {
 
-    color: red; 
     font-size: 150%; 
 }
 
 button {
     font-size: 200%;
-    background: red;
+    color: #EEF1EF;
+    background: maroon;
+    margin: 10px;
 }
